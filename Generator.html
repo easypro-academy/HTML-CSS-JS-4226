@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #A{
+            position: absolute;
+            left: 85%;
+            top: 1%;
+            height: 200px;
+            width: 250px;
+        }
+        #B{
+            position: absolute;
+            left: 85%;
+            top: 20%;
+            height: 100px;
+            width: 250px;
+            box-sizing: border-box;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="C" width="800" height="800"></canvas>
+    <button onclick = "F1()" id="A"> 
+        Destroy The Old World And Build A New One On Its Ruins
+    </button>
+    <input id="B" type="text">
+    
+    <script>
+        function F1()
+        {
+            let canv = document.getElementById("C")
+            let ctx=canv.getContext("2d")
+            let size=document.getElementById("B").value
+            if (isNaN(Number(size)) == true){
+                size = 4
+            }
+
+            let rowcols = 800/size
+            let A = []
+            let colors=["rgb(0,0,0)","rgb(0,0,25)", "rgb(0,0,50)", "rgb(0,0,75)", "rgb(0,0,100)", "rgb(252,221,118)", "rgb(0,25,0)", "rgb(0,50,0)", "rgb(0,75,0)", "rgb(0,100,0)", "rgb(128,128,128)", "rgb(173,165,135)", "rgb(200,200,200)","rgb(255,255,255)"]
+            console.log(colors.length)
+            for (let x = 0; x<rowcols; x++)
+            {
+                A.push([])
+                for (let g = 0; g<rowcols; g++)
+                {
+                    A[x].push(Math.round(Math.random() * 13))
+                    if (g==0 || x==0 || g==rowcols-1 || x==rowcols-1)
+                    {
+                        A[x][g]=0
+                    }
+                }
+                
+                
+            }
+            console.log(A)
+            for (let sm = 0; sm < 35; sm++){
+                for (let i=1; i<rowcols-1;i++)
+                {
+                    for (let y = 1; y<rowcols-1;y++)
+                    {
+                        let B=0
+                        for (let g = i-1; g<=i+1;g++)
+                        {
+                            for (let j = y-1; j<=y+1; j++)
+                            {
+                                B+=A[g][j]
+                            }
+                        }
+                        B /= 8.67
+                        if (A[i][y] < B && A[i][y] < 12.7){
+                            A[i][y] += 0.249
+                        } else if (A[i][y] > 0.4){
+                            A[i][y] -= 0.668
+                        }
+                    }
+                }
+            }
+            
+            
+            for (let i=0; i<rowcols;i++)
+            {
+                for (let y = 0; y<rowcols;y++)
+                {
+                    let r = Math.round(A[i][y])
+                    ctx.fillStyle = colors[r]
+                    ctx.fillRect(i*size, y*size, size, size)
+                }
+            }
+        }
+        F1()
+    </script>
+</body>
+</html>
