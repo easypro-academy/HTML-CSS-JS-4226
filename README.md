@@ -41,7 +41,7 @@
 ---
 
 
-## 📞 Контакты
+## 📞 Контакты и обучение у нас
 
 
 
@@ -53,11 +53,9 @@
 &nbsp;&nbsp;
 
 ###  🌐 <a href="https://easypro.academy/" target="_blank">easypro.academy</a>
+### ✉️ team@easypro.academy
 
-
-
-### 📱  <strong>+7 (499) 283-17-14</strong>
-
+<br>
 
 <a href="https://vk.com/easypro.academy" style="text-decoration: none; border-bottom: none;">
   <img src="./images/vk_ic.png" width="50">
