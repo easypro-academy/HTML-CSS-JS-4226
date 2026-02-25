@@ -43,7 +43,14 @@
 
 ## 📞 Контакты
 
+
+
 <div align="center">
+
+### <strong> <a href="https://easypro.academy/courses/javascript" target="_blank"> Записаться на курс "Web-разработка на JavaScript" </a></strong>
+Научим создавать интерактивные сайты: верстка, динамический контент и основы frontend-разработки.
+
+&nbsp;&nbsp;
 
 ###  🌐 <a href="https://easypro.academy/" target="_blank">easypro.academy</a>
 
@@ -52,12 +59,12 @@
 ### 📱  <strong>+7 (499) 283-17-14</strong>
 
 
-<a href="https://vk.com/easypro.academy" target="_blank">
-  <img src="https://easypro.academy/_next/image?url=%2Fimg%2Fdifferent%2Fvk.webp&w=64&q=75" width="36" alt="VK"/>
+<a href="https://vk.com/easypro.academy" style="text-decoration: none; border-bottom: none;">
+  <img src="./images/vk_ic.png" width="50">
 </a>
-&nbsp;&nbsp;&nbsp;
-<a href="https://t.me/easypro_channel" target="_blank">
-  <img src="https://easypro.academy/_next/image?url=%2Fimg%2Fdifferent%2Ftelegram.webp&w=32&q=75" width="36" alt="Telegram"/>
+&nbsp;&nbsp;
+<a href="https://t.me/easypro_channel" style="text-decoration: none; border-bottom: none; background-color: "red";">
+  <img src="./images/tg_ic.png" width="50">
 </a>
 
 </div>
